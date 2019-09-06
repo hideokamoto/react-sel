@@ -1,12 +1,12 @@
-# TypeScript Package template
+# React sel
 
-GitHub Template repository to create a npm package by using TypeScript.
+Simple React element search by using enzyme
 
 ## Prepare
 
 ```
-$ git clone YOUR_REPO_URI
-$ cd YOUR_REPO_URI
+$ git clone git@github.com:hideokamoto/react-sel.git
+$ cd react-sel
 
 // Put your GitHub Personal Access Token
 $ mv .envrc.example .envrc
@@ -43,8 +43,8 @@ $ git commit -m "<type>[optional scope]: <description>
 
 ```bash
 // clone
-$ git clone git@github.com:hideokamoto/MY_REPO_NAME.git
-$ cd MY_REPO_NAME
+$ git clone git@github.com:hideokamoto/react-sel.git
+$ cd react-sel
 
 // setup
 $ yarn

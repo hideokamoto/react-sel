@@ -1,8 +1,8 @@
 
-import func from '../libs/index'
+import { sel } from '../libs/index'
 
-describe('dummy', () => {
-    it('test', () => {
-        expect(func('John')).toEqual('Hello John !')
-    })
+describe('sel()', () => {
+  it('create sel attributes', () => {
+    expect(sel('john')).toEqual('[data-test="john"]')
+  })
 })
