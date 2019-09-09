@@ -4,7 +4,7 @@
   "description": "Simple react search element for enzyme",
   "main": "dist/index.js",
   "engines": {
-    "node": "^10.13.0 || >=11.10.1"
+    "node": ">=8.16.1 || ^10.13.0 || >=11.10.1"
   },
   "scripts": {
     "build": "rollup -c",
