@@ -1,6 +1,6 @@
 {
   "name": "react-sel",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Simple react search element for enzyme and React Testing Library",
   "main": "dist/index.js",
   "engines": {
@@ -40,14 +40,19 @@
       "jsx"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": ["ts-jest", {
-        "tsconfig": "tsconfig.json"
-      }]
+      "^.+\\.(ts|tsx)$": [
+        "ts-jest",
+        {
+          "tsconfig": "tsconfig.json"
+        }
+      ]
     },
     "testMatch": [
       "**/__tests__/*.+(ts|tsx|js)"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/jest.setup.ts"]
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.ts"
+    ]
   },
   "lint-staged": {
     "*.{ts,tsx}": [
