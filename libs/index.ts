@@ -46,9 +46,9 @@ export const findShallowElement = (wrapper: ShallowWrapper, id: string): Shallow
 }
 
 /**
- * Find element by data-test attribute using React Testing Library
+ * Find element by data-testid attribute using React Testing Library
  *
- * @param {string} id - The data-test attribute value
+ * @param {string} id - The data-testid attribute value
  * @return {HTMLElement}
  * @example
  * ```javascript
@@ -58,7 +58,7 @@ export const findShallowElement = (wrapper: ShallowWrapper, id: string): Shallow
  *
  * const Content = () => (
  *  <div>
- *    <div data-test="my-content">Hello</div>
+ *    <div data-testid="my-content">Hello</div>
  *  </div>
  * )
  * render(<Content />)
@@ -70,10 +70,10 @@ export const getByTestId = (id: string): HTMLElement => {
 }
 
 /**
- * Query element by data-test attribute using React Testing Library
+ * Query element by data-testid attribute using React Testing Library
  * Returns null if not found
  *
- * @param {string} id - The data-test attribute value
+ * @param {string} id - The data-testid attribute value
  * @return {HTMLElement | null}
  * @example
  * ```javascript
@@ -91,10 +91,10 @@ export const queryByTestId = (id: string): HTMLElement | null => {
 }
 
 /**
- * Find element by data-test attribute within a container
+ * Find element by data-testid attribute within a container
  *
  * @param {HTMLElement} container - The container element to search within
- * @param {string} id - The data-test attribute value
+ * @param {string} id - The data-testid attribute value
  * @return {HTMLElement}
  * @example
  * ```javascript
@@ -103,8 +103,8 @@ export const queryByTestId = (id: string): HTMLElement | null => {
  * import { getByTestId, findByTestIdWithin } from 'react-sel'
  *
  * const Content = () => (
- *  <div data-test="container">
- *    <div data-test="my-content">Hello</div>
+ *  <div data-testid="container">
+ *    <div data-testid="my-content">Hello</div>
  *  </div>
  * )
  * render(<Content />)
@@ -117,11 +117,11 @@ export const findByTestIdWithin = (container: HTMLElement, id: string): HTMLElem
 }
 
 /**
- * Query element by data-test attribute within a container
+ * Query element by data-testid attribute within a container
  * Returns null if not found
  *
  * @param {HTMLElement} container - The container element to search within
- * @param {string} id - The data-test attribute value
+ * @param {string} id - The data-testid attribute value
  * @return {HTMLElement | null}
  */
 export const queryByTestIdWithin = (container: HTMLElement, id: string): HTMLElement | null => {

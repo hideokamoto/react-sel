@@ -4,7 +4,9 @@ Simple React element search utilities for enzyme and React Testing Library
 
 ## Features
 
-- 🔍 Simple `data-test` attribute-based element selection
+- 🔍 Simple test attribute-based element selection
+  - `data-test` for enzyme
+  - `data-testid` for React Testing Library
 - 🧪 Support for both enzyme and React Testing Library
 - 📦 TypeScript support with full type definitions
 - ⚡️ Lightweight with minimal dependencies
@@ -31,6 +33,10 @@ npm install @testing-library/react react react-dom
 ```
 
 ## Usage
+
+> **Note:** This library uses different test attributes depending on the testing library:
+> - **enzyme**: Uses `data-test` attribute
+> - **React Testing Library**: Uses `data-testid` attribute
 
 ### With React Testing Library (Recommended)
 
